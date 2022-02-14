@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url("../images/water-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

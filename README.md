@@ -1,56 +1,92 @@
+# JavaScript-Capstone-Project
+## Bahethia Ratings
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Shows
 
-> Description the project.
+> With this awesome movie rating site, you can select your favorite TV movie, like it, make a comment, and keep track of the number of likes. We will implement this project using the TVmaze API. Built with JavaScript, HTML, and CSS: tested with Jest and run with webpack. 
+
+
+## screenshot
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
+- HTML&CSS, JavaScript
+- Webpack, Jest, TVMaze API
+- Workflow - Gitflow and Kanban
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
+
+> Git
+
+> npm
+
+> Web Browser
+
+> Code Editor
 
 ### Setup
 
+To get a local copy up and running follow these simple example steps.
+
+Clone the project:
+
+```
+git clone https://github.com/BereketRetta/JS_Capstone_Project.git
+```
+
+cd into the file:
+
+```
+cd JS_Capstone_Project.git
+```
+
+Open with any code editor
+
 ### Install
+
+Instal node modules:
+
+```
+npm install
+```
+
+Initialize local server:
+
+```
+npm start
+```
 
 ### Usage
 
+
 ### Run tests
 
-### Deployment
+Use following command for tests
 
+```
+npm test
+```
 
 
 ## Authors
 
-👤 **Author1**
+👤 **BEREKET RETTA**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [BereketRetta](https://github.com/bereketRetta)
+- LinkedIn: [@bereketRetta](https://www.linkedin.com/in/bereket-retta)
 
-👤 **Author2**
+👤 **STEVE W DAMES JR**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/steveWDamesJr)
+- Twitter: [@twitterhandle](https://twitter.com/Steve88312331)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/steve-w-dames-jr/)
+
+
 
 ## 🤝 Contributing
 
@@ -64,9 +100,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- This project is built in Microverse's second module's capstone.
 
 ## 📝 License
 
