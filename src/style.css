@@ -10,3 +10,50 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+header {
+  margin: 40px 0;
+  height: 10vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-ul {
+  display: flex;
+  margin: 10px auto;
+  width: 80%;
+}
+
+.nav-ul li {
+  margin-right: 65px;
+  margin-top: 5px;
+  padding: 16px;
+  list-style: none;
+}
+
+.nav-ul li a {
+  opacity: 0.6;
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.active {
+  border-bottom: 1px solid white;
+}
+
+.title {
+  margin-top: 0 !important;
+  border: 2px solid black;
+  background-image: url("../images/ethiopia-lion.jpg");
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  letter-spacing: 1px;
+}
+
+span {
+  display: block;
+}
