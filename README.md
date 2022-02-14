@@ -1,4 +1,5 @@
-# JS_Capstone_Project
+# JavaScript-Capstone-Project
+## Bahethia Ratings
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Shows
