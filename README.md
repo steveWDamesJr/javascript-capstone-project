@@ -3,7 +3,7 @@
 
 # Shows
 
-> In this project, we will implement JS project using the TVmaze API.
+> With this awesome movie rating site, you can select your favorite TV movie, like it, make a comment, and keep track of the number of likes. We will implement this project using the TVmaze API. Built with JavaScript, HTML, and CSS: tested with Jest and run with webpack. 
 
 
 ## screenshot
