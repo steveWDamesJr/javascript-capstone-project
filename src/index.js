@@ -2,6 +2,7 @@ import './style.css';
 import axios from 'axios';
 import itemsCounter from './counter.js';
 import { getMovies, GetLikes } from './request.js';
+import './contacts.js';
 
 const main = document.querySelector('main');
 const div = document.querySelector('.movies');
