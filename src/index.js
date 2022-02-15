@@ -52,6 +52,10 @@ body.addEventListener('click', (event) => {
     event.target.classList.add('active');
     main.innerHTML = '';
     main.append(div);
+  } else if (event.target.contains('fa-heart')) {
+    updateLikes(event.target);
+    displayMovie();
+    event.target.classList.add('heart');
   } else if (event.target.classList.contains('link')) {
     resetLinks();
     event.target.classList.add('active');
