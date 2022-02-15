@@ -170,7 +170,7 @@ main {
 }
 
 #comment-area {
-  margin: 10px 10px;
+  margin: 10px;
   background-color: #fff;
   border: 1px solid #ebecf0;
   box-shadow: -1px -1px 10px 5px #ebecf0;
@@ -234,11 +234,17 @@ footer p {
 
 .text-content p {
   margin: 15px;
+  width: 50%;
 }
 
 .text-content li {
   list-style: none;
   margin: 10px;
+}
+
+.contacts-p {
+  padding-top: 2rem;
+  color: #fff;
 }
 
 footer {
