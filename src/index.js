@@ -26,7 +26,7 @@ const displayMovie = async () => {
     const likeVal = likes[index] !== undefined ? likes[index].likes : 0;
     div.innerHTML += `
     <div class="movie" id="${movie.id}">
-    <img src="${movie.image.medium}" alt="${movie.name}">
+    <img src="${movie.image.medium}" alt="${movie.name}" id="moz-content">
     <div class="likes">
     <p class="like-p">${movie.name}</p>
     <button class="like-button"><i class="far fa-heart fa-2x" id='heart-${movie.id}'></i></button>
