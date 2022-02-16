@@ -8,6 +8,7 @@
 
 
 ## screenshot
+![screenshot](./images/bahethia.png)
 
 
 ## Built With
@@ -18,6 +19,9 @@
 
 
 ## Getting Started
+
+## Documentation
+[About the app](https://drive.google.com/file/d/1-ISmQCV6vbSHg3D4zuMbHeg0IuXKu93T/view?usp=sharing)
 
 ### Prerequisites
 
@@ -36,13 +40,13 @@ To get a local copy up and running follow these simple example steps.
 Clone the project:
 
 ```
-git clone https://github.com/BereketRetta/JS_Capstone_Project.git
+git clone https://github.com/steveWDamesJr/javascript-capstone-project.git
 ```
 
 cd into the file:
 
 ```
-cd JS_Capstone_Project.git
+cd javascript-capstone-project.git
 ```
 
 Open with any code editor
