@@ -43,7 +43,7 @@ git clone https://github.com/steveWDamesJr/javascript-capstone-project.git
 cd into the file:
 
 ```
-cd JS_Capstone_Project.git
+cd javascript-capstone-project.git
 ```
 
 Open with any code editor
