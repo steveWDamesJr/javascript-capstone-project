@@ -69,7 +69,7 @@ main {
 img {
   -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, rgb(0 0 0 / 30%));
   transition: all 0.5s ease;
-  box-shadow: 5px 5px 11px rgba(0, 0, 0, 0.7);
+  box-shadow: 5px 5px 11px rgba(0 0 0 / 70%);
 }
 
 img:hover {
@@ -211,17 +211,17 @@ img:hover {
   padding: 15px;
 }
 
-#comment-feature>* {
+#comment-feature > * {
   padding: 15px;
 }
 
-#comment-form form>* {
+#comment-form form > * {
   border-radius: 10px;
   padding: 10px;
   margin: 5px 0;
 }
 
-#comment-area>*:not(:first-child) {
+#comment-area > *:not(:first-child) {
   text-align: start;
   background-color: #ebecf0;
   padding: 20px;
