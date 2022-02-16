@@ -1,8 +1,8 @@
 import axios from 'axios';
-import itemsCounter from './counter';
-import { getMovies, GetLikes } from './request';
+import itemsCounter from './counter.js';
+import { getMovies, GetLikes } from './request.js';
 import './style.css';
-import './contacts';
+import './contacts.js';
 
 const main = document.querySelector('main');
 const div = document.querySelector('.movies');
@@ -31,7 +31,7 @@ const displayMovie = async () => {
     <p class="like-p">${movie.name}</p>
     <button class="like-button"><i class="far fa-heart fa-2x" id='heart-${movie.id}'></i></button>
     </div>
-    <p>${likeVal} likes</p>
+    <p class="like-val">${likeVal} likes</p>
     <button class="comment-button">Comment</button>
     </div>`;
   });
@@ -59,6 +59,15 @@ const popUpHtml = (target) => {
     </div>`;
 };
 
+const getComments = async (movieId) => {
+  try {
+    const comments = await axios.get(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/XMHWey4za3iNnBFD5KUq/comments?item_id=${movieId}`);
+    return comments.data;
+  } catch {
+    return [];
+  }
+};
+
 const showComments = async (id) => {
   try { getCommentsFromAPI = await getComments(id); } catch {
     popUpHtml(id);
@@ -70,7 +79,7 @@ const showComments = async (id) => {
   } else {
     getCommentsFromAPI.forEach((i) => { commentHTML += `<p>${i.creation_date} ${i.username}: ${i.comment}</p>`; });
   }
-  let commentsCount = itemsCounter(getCommentsFromAPI);
+  const commentsCount = itemsCounter(getCommentsFromAPI);
   comments.innerHTML
   += `<div id='comment-area'>
         <h2>Comments (${commentsCount})</h2>
@@ -96,36 +105,26 @@ const postNewComments = (movieID, userName, userComment) => {
   showComments(movieID);
 };
 
-const getComments = async (movieId) => {
-  try {
-    const comments = await axios.get(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/XMHWey4za3iNnBFD5KUq/comments?item_id=${movieId}`);
-    return comments.data;
-  } catch {
-    return [];
+const links = document.querySelectorAll('nav li a');
+const resetLinks = () => {
+  for (let i = 0; i < links.length; i += 1) {
+    links[i].classList.remove('active');
   }
 };
-
-const links = document.querySelectorAll('nav li a');
-  const resetLinks = () => {
-    console.log(links);
-    for (let i = 0; i < links.length; i += 1) {
-      links[i].classList.remove('active');
-    }
-  };
 
 body.addEventListener('click', (e) => {
   const indexID = e.target.parentNode.id;
   if (e.target.classList.contains('shows')) {
     resetLinks();
     e.target.classList.add('active');
-    main.innerHTML='';
+    main.innerHTML = '';
     main.append(div);
-  }else if (e.target.className === 'comment-button') {
+  } else if (e.target.className === 'comment-button') {
     body.classList.add('fixed');
     popUpHtml(indexID);
     commentHTML = '';
     showComments(indexID);
-    commentsDiv.classList.remove('d-none')
+    commentsDiv.classList.remove('d-none');
   } else if (e.target.classList.contains('fa-heart')) {
     updateLikes(e.target);
     displayMovie();
@@ -142,7 +141,6 @@ body.addEventListener('click', (e) => {
     } else {
       const p = e.target.previousElementSibling;
       p.innerText = 'Please insert your name and comment.';
-  
     }
   } else if (e.target.classList.contains('fa-times')) {
     comments.innerHTML = '';
