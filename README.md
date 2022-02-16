@@ -21,7 +21,7 @@
 ## Getting Started
 
 ## Documentation
-![About the app](https://drive.google.com/file/d/1-ISmQCV6vbSHg3D4zuMbHeg0IuXKu93T/view?usp=sharing)
+[About the app](https://drive.google.com/file/d/1-ISmQCV6vbSHg3D4zuMbHeg0IuXKu93T/view?usp=sharing)
 
 ### Prerequisites
 
