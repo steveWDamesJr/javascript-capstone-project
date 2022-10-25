@@ -6,6 +6,8 @@
 
 > With this awesome movie rating site, you can select your favorite TV movie, like it, make a comment, and keep track of the number of likes. We will implement this project using the TVmaze API. Built with JavaScript, HTML, and CSS: tested with Jest and run with webpack. 
 
+## Demo
+[View now](https://master--quirky-meitner-042875.netlify.app/)
 
 ## screenshot
 ![screenshot](./images/bahethia.png)
